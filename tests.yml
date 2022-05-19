@@ -12,7 +12,6 @@ jobs:
     name: Testing CodeEdit
     runs-on: [self-hosted, macOS]
     steps:
-      - name: Checkout repository
         uses: actions/checkout@v1
       - name: Testing App
         run: exec ./.github/scripts/test_app.sh arm
